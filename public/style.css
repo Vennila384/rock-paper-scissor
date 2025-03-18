@@ -1,0 +1,442 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+button{
+    cursor: pointer;
+}
+
+#container{
+    width: 600px;
+    height: 220px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+#create{
+    width: 400px;
+    height: 80px;
+    border-radius: 12px;
+    font-size: 25px;
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: white;
+    background-color: #83C6F0;
+}
+
+#head{
+    color: white;
+    font-size: 70px;
+    margin-top: 70px;
+}
+
+
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(13, 13, 90);
+}
+
+#join{
+    width: 400px;
+    height: 80px;
+    font-size: 25px;
+    margin: auto;
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    border: none;
+    justify-content: center;
+    background-color: #83C6F0;
+}
+
+#createRoom{
+    width: 720px;
+    height: 550px;
+    border-radius: 12px;
+    background-color: #83C6F0;
+    padding-top: 50px;
+    /* color: white; */
+    margin: auto;
+    display: none;
+    text-align: left;
+    margin-top: 150px;
+    padding-left: 80px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+#back{
+    width: 400px;
+    height: 70px;
+    margin-top: 40px;
+    background-color: #0D0D5A;
+    font-size: 27px;
+    color: white;
+    border-radius: 12px;
+    border: none;
+}
+
+#heading{
+    font-size: 45px;    
+    margin-left: -80px;
+}
+
+button{
+    cursor: pointer;
+}
+
+#newRoomName{
+    width: 400px;
+    height: 70px;
+    color: black;
+    /* border-radius: 25px; */
+    border-radius: 12px;
+    border: none;
+    font-size: 25px;
+    margin-top: 15px;
+    padding-left: 20px;
+    background-color:white;
+}
+
+#userName{
+    width: 300px;
+    height: 60px;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 12px;
+}
+
+#createReq{
+    width: 400px;
+    height: 70px;
+    color: white;
+    border: none;
+    font-size: 27px;
+    border-radius: 12px;
+    margin-top: 40px;
+    background-color: #0D0D5A;
+}
+
+#container2{
+    width: 200px;
+    height: 50px;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+}
+
+label{
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.radioButton{
+    margin-right: 20px;
+}
+
+/* #createRoom {
+    width: 1200px;
+    height: 500px;
+    border-radius: 12px;
+    background-color: rgb(13, 13, 90); 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+#newRoomName {
+    width: 600px;
+    height: 90px;
+    color: black;
+    border-radius: 12px;
+    background-color: #83C6F0;
+    font-size: 20px; 
+    padding: 10px; 
+    border: none; 
+    outline: none; 
+}
+
+#createReq {
+    width: 550px;
+    height: 90px;
+    color: white;
+    border-radius: 12px;
+    background-color: green;
+    font-size: 20px;
+    border: none; 
+    cursor: pointer; 
+} */
+
+#joinRoom{
+    width: 720px;
+    height: 550px;
+    border-radius: 12px;
+    display: none;
+    margin: auto;
+    display: none;
+    text-align: left;
+    padding-left: 80px;
+    margin-top: 150px;
+    background-color: #83C6F0;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+#roomName{
+    width: 400px;
+    height: 70px;
+    color: black;
+    font-size: 25px;
+    margin-top: 15px;
+    padding-left: 20px;
+    border-radius: 12px;
+    background-color: white;
+}
+
+#joinReq{
+    width: 400px;
+    height: 70px;
+    color: white;
+    border-radius: 12px;
+    margin-top: 30px;
+    font-size: 27px;
+    border: none;
+    background-color: #0D0D5A;
+}
+
+
+#paraTag{
+    display: none;
+    color: red;
+    font-size: 19px;
+}
+
+
+#paragraph{
+    display: none;
+    color: red;
+    font-size: 19px;
+}
+
+
+#name{
+    width: 300px;
+    height: 60px;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 12px;
+}
+
+#backButton{
+    width: 400px;
+    height: 70px;
+    margin-top: 40px;
+    border: none;
+    font-size: 27px;
+    background-color: #0D0D5A;
+    color: white;
+    border-radius: 12px;
+}
+
+
+#gamePage{
+    width: 1200px;
+    height: 800px;
+    display: none;
+    margin: auto;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+#header{
+    width: 1200px;
+    height: 220px;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 12px;
+    padding-right: 30px;
+    /* margin: auto; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+#gameName{
+    width: 350px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nameImage{
+    width: 320px;
+    height: 150px;
+}
+
+#scoreDiv{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#score{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+#scoreNumber{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.image{
+    width: 190px;
+    height: 180px;
+    border-radius: 10px;
+    /* color: #0D0D5A; */
+    /* background-color: #0D0D5A; */
+    /* border-radius: 50%; */
+}
+
+#rock{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border:16px solid #dd3755;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#paper{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border:16px solid #5470f5;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#scissor{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border:16px solid #eca51c;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#details{
+    width: 1200px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#images{
+    width: 1200px;
+    height: 270px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#playerDetail{
+    width: 800px;
+    height: 500px;
+    display: none;
+    margin: auto;
+    justify-content: space-between;
+}
+
+
+#player1{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border:16px solid #dd3755;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#player2{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border:16px solid #dd3755;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.players{
+    font-size: 29px;
+    color: white;
+}
+
+#image1{
+    width: 200px;
+    height: 190px;
+    border-radius: 10px;
+}
+
+#image2{
+    width: 200px;
+    height: 190px;
+    border-radius: 10px;
+}
+
+.show{
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}
+
+
+#result{
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+    margin: auto;
+}

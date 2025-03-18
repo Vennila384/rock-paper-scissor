@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <center>
+            <h1 id="head">ROCK PAPER SCISSOR</h1>
+        </center>
+        <div id="container">
+            <button id="create" onclick="findRoom('create')">Create Room</button>
+            <button id="join" onclick="findRoom('join')">Join Room</button>
+        </div>
+        <div id="createRoom">
+            <center>
+                <h1 id="heading">Create Room</h1>
+            </center>
+            <label>Room name</label>
+            <input type="text" placeholder="Enter the room name to create" id="newRoomName">
+            <p id="paragraph">Please fill this field</p>
+            <!-- <select id="dropdown"> 
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="5">5</option>
+            </select> -->
+            <!-- <label>User Name</label>
+            <input id="userName" placeholder="Enter your name" type="text"/> -->
+            <!-- <label>Rounds</label>
+            <div id="container2">
+                <label  class="radioButton">
+                    <input type="radio" name="round">
+                    10
+                </label>
+                <label class="radioButton">
+                    <input type="radio" name="round">
+                    15
+                </label>
+                <label class="radioButton">
+                    <input type="radio" name="round">
+                    20
+                </label> -->
+            <!-- </div> -->
+            <button id="createReq" onclick="createRoom()">Create Room</button>
+            <button id="back" onclick="back('create')">Back</button>
+        </div>
+        <div id="joinRoom">
+            <center>
+                <h1 id="heading">Join Room</h1>
+            </center>
+            <label>Room Name</label>
+            <input id="roomName" placeholder="Enter the room name to join" type="text">
+            <p id="paraTag">Please fill this field</p>
+            <!-- <label>User Name</label> -->
+            <!-- <input id="name" placeholder="Enter your name" type="text"/> -->
+            <button id="joinReq" onclick="joinRoom()">Join Room</button>
+            <button id="backButton" onclick="back('join')">Back</button>
+        </div> 
+        <div id="gamePage">
+            <div id="header">
+                <div id="gameName">
+                    <img id="nameImage" src="./images/logo.svg">
+                </div>
+                <div id="scoreDiv">
+                    <div id="score">
+                        <p>SCORE</p>
+                    </div>
+                    <div id="scoreNumber">
+                        0
+                    </div>
+                </div>
+            </div>
+            <div id="details">
+                <div id="images">
+                    <div id="rock">
+                        <img src="./images/icon-rock.svg" class="image" onclick="userChoice('rock')" alt="rock">
+                    </div>
+                    <div id="paper">
+                        <img src="./images/icon-paper.svg" class="image" onclick="userChoice('paper')" alt="paper">
+                    </div>
+                    <div id="scissor">
+                        <img src="./images/icon-scissors.svg" class="image" onclick="userChoice('scissors')" alt="scissor">
+                    </div>
+                </div>
+                <div id="playerDetail">
+                    <div class="show">
+                        <p class="players">You Picked</p>
+                        <div id="player1">
+                            <img id="image1" alt="Waiting for oponent">
+                        </div>
+                    </div>
+                    <div class="show">
+                        <p class="players">House Picked</p>
+                        <div id="player2">
+                            <img id="image2" alt="Waiting for oponent">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p id="result"></p>
+        </div>
+        
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
